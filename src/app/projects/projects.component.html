@@ -1,0 +1,12 @@
+<h2>My Projects</h2>
+<ul class="projects">
+  <ul *ngFor="let project of projects">
+    <h3>{{project.name}}</h3>
+    <ul>
+      <b>Description:</b> {{project.description}}
+    </ul>
+    <ul>
+      <b>Github:</b> {{project.github}}
+    </ul>
+  </ul>
+</ul>

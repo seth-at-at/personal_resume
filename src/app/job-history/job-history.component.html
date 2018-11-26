@@ -1,0 +1,15 @@
+<h2>My Work History</h2>
+<ul class="jobs">
+  <ul *ngFor="let job of jobs">
+    <h3>{{job.name}}</h3>
+    <ul>
+      <b>Located in:</b> {{job.location}}
+    </ul>
+    <ul>
+      <b>The Work:</b> {{job.description}}
+    </ul>
+    <ul>
+      <b>Contact:</b> {{job.contact}}
+    </ul>
+  </ul>
+</ul>
