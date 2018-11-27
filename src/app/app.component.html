@@ -1,46 +1,34 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 align="center">
-      <i class="fa fa-bath" aria-hidden="true"></i>
-      Seth Moser
-    </h1>
-  </div>
-  <div class="contact" align="center">
-    <ul>
-      <li>
-        Email: seth19483@gmail.com
-      </li>
-      <li>
-        Phone: (630) 248-9930
-      </li>
-      <li>
-        Github: <a href="https://github.com/seth-at-at">Seth-at-at</a>
-      </li>
-    </ul>
+    <div class="contact row">
+      <div class="col-sm-3">
+        <img src="./assets/profile-pic.jpg" alt="profile pic" width="200px" height="200px">
+      </div>
+
+      <div class="col-sm-9">
+        <h1>
+          <i class="fa fa-bath" aria-hidden="true"></i>
+          Seth Moser
+        </h1>
+        <ul>
+          <li>
+            Email: seth19483@gmail.com
+          </li>
+          <li>
+            Phone: (630) 248-9930
+          </li>
+          <li>
+            Github: <a href="https://github.com/seth-at-at">Seth-at-at</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
   <div class="container">
     <ngb-tabset>
-      <ngb-tab title="Job History">
-          <ng-template ngbTabContent>
-            <app-job-history></app-job-history>
-          </ng-template>
-        </ngb-tab>
-        
-        <ngb-tab title="Experience">
-          <ng-template ngbTabContent>
-            <app-experiences></app-experiences>
-          </ng-template>
-        </ngb-tab>
-        
-        <ngb-tab title="Projects">
-          <ng-template ngbTabContent>
-            <app-projects></app-projects>
-          </ng-template>
-        </ngb-tab>
-        
-        <ngb-tab title="Skills">
+      <ngb-tab title="Skills">
           <ng-template ngbTabContent>
             <h2>Technical</h2>
             <ul class="tech">
@@ -57,10 +45,28 @@
                 <li>ActiveRecord</li>
                 <li>SQL</li>
                 <li>DigitalOcean</li>
-              </b>  
+              </b>
             </ul>
           </ng-template>
         </ngb-tab>
-        
+
+        <ngb-tab title="Experience">
+          <ng-template ngbTabContent>
+            <app-experiences></app-experiences>
+          </ng-template>
+        </ngb-tab>
+
+        <ngb-tab title="Projects">
+          <ng-template ngbTabContent>
+            <app-projects></app-projects>
+          </ng-template>
+        </ngb-tab>
+
+        <ngb-tab title="Job History">
+          <ng-template ngbTabContent>
+            <app-job-history></app-job-history>
+          </ng-template>
+        </ngb-tab>
+
       </ngb-tabset>
     </div>
